@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> Cars Price</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="static/css/default.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div id="menu">
+  <ul>
+    <li class="active"><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    
+  </ul>
+</div>
+<div id="header">
+  <div id="logo">
+    
+  </div>
+</div>
+
+<div id="sidebar">
+    
+
+   
+    
+    </div>
+    <div class="zakar">
+<center>  <h2>Predicting Used Car Prices with Machine Learning</h2></center>
+</div>
+<fieldset  >
+  <legend>FEATURES :</legend>
+    <form id="zak" action="{{ url_for('predict_forest_reg')}}"method="post">
+      <label for="yearOfRegistration">year Of Registration:</label><br>
+      <input type="text" name="yearOfRegistration" placeholder=" year Of Registration " required="required" />
+      <br>
+         
+        <label for="gearbox">gearbox manual or automatic :</label><br>
+        <div class="select">
+        <select id="gearbox" name="gearbox" required="required">
+          <option value="" selected disabled hidden>Choose here</option>
+          <option value="0">manual</option>
+          <option value="1">automatic</option>
+          </select>
+      </div>
+      <br>
+        <label for="powerPS">the power of the car:</label><br>
+    <input type="text" name="powerPS" placeholder="the power of the car " required="required" />
+    <br>
+    <label for="powerPS">how many kilometres the car has driven:</label><br>
+    <input type="text" name="kilometer" placeholder="how many kilometres" required="required" />
+    <br>
+      
+      <label for="fuelType">FuelType:</label><br>
+      <div class="select">
+      <select id="fuelType" name="fuelType">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="1">benzene</option>
+    <option value="2">diesel</option>
+    <option value="4">gas</option>
+    <option value="5">hybrid</option>
+    <option value="6">electrical</option>
+    <option value="3">other</option>
+
+  </select>
+  </div>    
+      
+    
+   <label for="brand">Brand:</label><br>
+  <div class="select">
+  <select id="brand" name="brand">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="1">volkswagen</option>
+    <option value="2">audi</option>
+    <option value="3">jeep</option>
+    <option value="4">skoda</option>
+    <option value="5">bmw</option>
+    <option value="6">peugeot</option>
+    <option value="7">ford</option>
+    <option value="8">mazda</option>
+    <option value="9">nissan</option>
+    <option value="10">renault</option>
+    <option value="11">mercedes_benz</option>
+    <option value="12">seat</option>
+    <option value="13">honda</option>
+    <option value="14">fiat</option>
+    <option value="15">opel</option>
+    <option value="16">mini</option>         
+    <option value="17">smart</option>
+    <option value="18">hyundai</option>
+    <option value="19">alfa_romeo</option>
+    <option value="20">subaru</option>
+    <option value="21">volvo</option>
+    <option value="22">mitsubishi</option>
+    <option value="23">kia</option>
+    <option value="24">lancia</option>
+    <option value="25">porsche</option>
+    <option value="26">citroen</option>
+    <option value="27">sonstige_autos</option>
+    <option value="28">toyota</option>
+    <option value="29">chevrolet</option>
+    <option value="30">dacia</option>
+    <option value="31">suzuki</option>
+    <option value="32">daihatsu</option>
+    <option value="33">chrysler</option>
+    <option value="34">jaguar</option>
+    <option value="35">daewoo</option>
+    <option value="36">rover</option>
+    <option value="37">saab</option>
+    <option value="38">land_rover</option>
+    <option value="39">lada</option>
+    <option value="40">trabant</option>
+  </select>
+</div>
+      <label for="m">the car has a damage repareid :</label><br>
+      <div class="select">
+        <select id="notRepairedDamage" name="notRepairedDamage" required="required">
+          <option value="" selected disabled hidden>Choose here</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+          </select>
+      </div>
+    
+
+<br>
+       <center> <button type="submit" class="button">Calculate the Car Price  <i class="fas fa-euro-sign"></i> </button></center>
+    </form>
+    <h5> <center><i class="fas fa-car">{{ prediction_text1 }}</i></center></h5>
+</fieldset>
+   <br>
+   <br>
+  
+ </div>
+
+    
+
+    
+
+</body>
+</html>
