@@ -3,7 +3,7 @@
 <h3>-Elaboration of a Multiple Regression Model in order to predict the price according to several variables</h3>
 <h3>-Elaboration of the different Classification and clustering models in order to predict the type of cars (Automatic / Manual)</h3>
 
-<h2>in the notebook file  <h1><u> cars_project</u></h1> you will find the different steps to realize the project: </h2>
+<h2>in the notebook file  <h1><u> <a href="https://nbviewer.jupyter.org/github/zackhr/Machine-Learning-Project/blob/master/Cars_project.ipynb" >cars_project</a></u></h1> you will find the different steps to realize the project: </h2>
 <ul>
   <li>Exploration and visualisation of data </li>
   <li>Cleaning dataset and missing values </li>
