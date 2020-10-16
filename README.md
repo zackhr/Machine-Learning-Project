@@ -11,6 +11,7 @@
   <li>Saving and Using the model</li>
   <li>Deployment of the model </li>
   </ul>
+  <img src="2.png" >
   
 <h3>I have worked on a dataset of used cars listed from Ebay Kleinanzeigen Germany .</h3>
 <h3>the data was extracted from a form filled by people who want to sell cars on the ebay site</h3>
